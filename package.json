@@ -1,0 +1,21 @@
+{
+  "name": "amrita-bouquet",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An interactive 3D flower bouquet — a digital apology for Amrita Ma'am.",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.14",
+    "three": "^0.166.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.166.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}
