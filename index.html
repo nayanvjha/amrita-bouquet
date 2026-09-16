@@ -34,10 +34,33 @@
   <!-- the opening whisper: "Amrita Ma'am…" -->
   <div id="whisper" class="layer" aria-hidden="true"><span>Amrita Ma’am…</span></div>
 
-  <!-- gesture hint, shown only briefly -->
+  <!-- gesture guide: how to open each hand -->
   <div id="instructions" class="layer" aria-hidden="true">
-    <div class="instr-row"><span class="instr-key">Left hand</span><span class="instr-dot">·</span><span>Grow</span></div>
-    <div class="instr-row"><span class="instr-key">Right hand</span><span class="instr-dot">·</span><span>Bloom</span></div>
+    <div class="guide-hand guide-left">
+      <div class="guide-svg"><svg viewBox="0 0 120 120" aria-hidden="true">
+          <g class="hand-index"><line x1="46" y1="62" x2="46" y2="24"/></g>
+          <line x1="60" y1="62" x2="60" y2="18"/>
+          <line x1="74" y1="62" x2="74" y2="23"/>
+          <line x1="87" y1="64" x2="87" y2="34"/>
+          <path class="hand-palm" d="M40 62 H92 V94 A26 26 0 0 1 40 94 Z"/>
+          <g class="hand-thumb"><line x1="41" y1="84" x2="16" y2="58"/></g>
+          <path class="hand-arc" d="M22 48 Q30 26 44 18"/>
+        </svg></div>
+      <p class="guide-label"><span class="instr-key">Left hand</span><span class="instr-dot">·</span>Grow</p>
+    </div>
+    <div class="guide-hand guide-right">
+      <div class="guide-svg mirrored"><svg viewBox="0 0 120 120" aria-hidden="true">
+          <g class="hand-index"><line x1="46" y1="62" x2="46" y2="24"/></g>
+          <line x1="60" y1="62" x2="60" y2="18"/>
+          <line x1="74" y1="62" x2="74" y2="23"/>
+          <line x1="87" y1="64" x2="87" y2="34"/>
+          <path class="hand-palm" d="M40 62 H92 V94 A26 26 0 0 1 40 94 Z"/>
+          <g class="hand-thumb"><line x1="41" y1="84" x2="16" y2="58"/></g>
+          <path class="hand-arc" d="M22 48 Q30 26 44 18"/>
+        </svg></div>
+      <p class="guide-label"><span class="instr-key">Right hand</span><span class="instr-dot">·</span>Bloom</p>
+    </div>
+    <p class="guide-note">Palms to the camera, about an arm’s length away. Slowly open thumb and finger.</p>
   </div>
   <div id="fallback-note" class="layer" aria-hidden="true"></div>
 

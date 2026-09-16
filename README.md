@@ -27,7 +27,9 @@ so it can be dropped on any static host — Vercel, Netlify, GitHub Pages).
 
 1. **Intro** — “Something I wanted to give you. Reach out.” Choose *Enable
    camera* or *Continue without camera*. The camera is never forced.
-2. **Grow** — open your **left hand** (spread thumb and index finger). Stems rise
+2. **Grow** — hold your **left hand** up, palm to the camera, about an arm's length
+   away, and slowly spread your thumb and index finger apart. An animated guide at the
+   bottom of the screen shows the motion for the first while (press `?` to see it again). Stems rise
    out of the paper, leaves unfold, buds lift. Centre flowers first, edges last.
 3. **Bloom** — open your **right hand**. The flowers open in a wave, outer petals
    first; roses unfurl from the outside in, tulips stay as soft goblets, daisies
@@ -61,6 +63,7 @@ Drag to orbit, scroll / pinch to zoom. The camera relaxes back on its own.
 | `R` | reset (animated: flowers close, stems sink, back to the intro) |
 | `H` | hide the small UI (camera window, hints) |
 | `S` | swap which hand does what |
+| `?` | show the gesture guide again |
 | `D` | developer panel: auto grow / bloom, reset, camera & tracking toggles, hand landmarks, FPS, draw calls, live values |
 
 ## Structure

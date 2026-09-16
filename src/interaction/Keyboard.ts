@@ -1,7 +1,7 @@
 /**
  * Keyboard fallback and shortcuts.
  *   G / B  hold to grow / bloom      R reset      Space auto presentation
- *   Enter  reveal the message        H hide UI    D debug     S swap hands
+ *   Enter  reveal the message        H hide UI    D debug     S swap hands   ? guide
  */
 export interface KeyboardHandlers {
   onReset: () => void;
@@ -10,6 +10,7 @@ export interface KeyboardHandlers {
   onToggleUI: () => void;
   onToggleDebug: () => void;
   onSwapHands: () => void;
+  onHelp: () => void;
 }
 
 export class Keyboard {
@@ -33,6 +34,7 @@ export class Keyboard {
       case 'h': this.handlers.onToggleUI(); break;
       case 'd': this.handlers.onToggleDebug(); break;
       case 's': this.handlers.onSwapHands(); break;
+      case '?': case '/': this.handlers.onHelp(); break;
     }
   };
   private onUp = (e: KeyboardEvent) => {

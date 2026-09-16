@@ -141,6 +141,7 @@ const keyboard = new Keyboard({
   onToggleUI: () => { state.uiHidden = !state.uiHidden; document.body.classList.toggle('ui-hidden', state.uiHidden); },
   onToggleDebug: () => debug.toggle(),
   onSwapHands: () => { handTracking.swapHands = !handTracking.swapHands; },
+  onHelp: () => instructions.showGuide(state.elapsed),
 });
 
 /* ------------------------------------------------------------------ loop */
@@ -228,7 +229,7 @@ function frame() {
     `bloom    ${state.bloom.toFixed(3)} -> ${state.targetBloom.toFixed(2)}`,
     `hands    L${gestures.leftSeen ? '✓' : '·'} R${gestures.rightSeen ? '✓' : '·'}  tracker ${handTracking.status} ${handTracking.delegate}${handTracking.lastError ? ' ' + handTracking.lastError : ''}`,
     `flowers  ${bouquet.flowerCount}   draws ${renderer.info.render.calls}   tris ${renderer.info.render.triangles}`,
-    `keys     G/B grow/bloom · Space auto · Enter reveal · R reset · H ui · S swap hands`,
+    `keys     G/B grow/bloom · Space auto · Enter reveal · R reset · H ui · S swap hands · ? guide`,
   ]);
 }
 

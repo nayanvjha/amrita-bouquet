@@ -65,9 +65,9 @@ export const INTERACTION = {
 
 export const TIMING = {
   whisperInSeconds: 1.5,
-  whisperOutSeconds: 4.4,
-  instructionsInSeconds: 4.8,
-  instructionsOutSeconds: 14,
+  whisperOutSeconds: 8.5,
+  instructionsInSeconds: 8.0,
+  instructionsOutSeconds: 40,
   autoPresentation: {
     growSeconds: 9,
     bloomSeconds: 8,
